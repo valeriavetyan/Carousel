@@ -1,0 +1,103 @@
+body{
+    position: relative;
+    margin: 120px auto 20px auto;
+    width: 90%;
+    font-size: 100%;
+    max-width: 940px;
+    min-width: 980px;
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff, rgb(255, 229, 187));
+}
+
+img{
+  height: 550px;
+  width: auto;
+  border: 1px solid black;
+  width: 89.66%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7px 1px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 7px 1px;
+  overflow: hidden;
+}
+  
+.slider {
+  position: relative;
+}
+  
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+  
+.slider-element {
+  width: 100%;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
+}
+  
+div.slider-arrow-left,
+div.slider-arrow-right {
+  opacity: 0.6;
+  z-index: 4;
+}
+
+div.slider-arrow-left {
+  top: 22%;
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-image: url(./caruselimages/left-arrow.png)
+}
+
+div.slider-arrow-right {
+  right: 10%;
+  top: 22%;
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-image: url(./caruselimages/right-arrow.png);
+}
+    
+div.slider-arrow-left:hover {
+  opacity: 1.0;
+}
+  
+div.slider-arrow-right:hover {
+  opacity: 1.0;
+}
+
+div.slider-dots {
+  position: relative;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: -4%;
+  bottom: 1;
+  z-index: 3;
+  text-align: center;
+}
+  
+span.dot {
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px;
+  padding: 0;
+  display: inline-block;
+  background-color: whitesmoke;
+  border: 1px solid  rgb(63, 63, 63);
+  border-radius: 50%;
+  cursor: pointer;
+}
